@@ -4,6 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const navbar = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const navs = ["home", "about", "projects", "contact"]
   return (
     <>
       <div className="flex flex-wrap">
@@ -33,38 +34,20 @@ const navbar = () => {
                 id="example-navbar-info"
               >
                 <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-                  <li className="nav-item">
-                    <a
-                      className="px-3 py-2 flex items-center text-lg font-semibold leading-snug text-white hover:opacity-75"
-                      href="#"
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="px-3 py-2 flex items-center text-lg font-semibold leading-snug text-white hover:opacity-75"
-                      href="#about"
-                    >
-                      About Me
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="px-3 py-2 flex items-center text-lg font-semibold leading-snug text-white hover:opacity-75"
-                      href="#projects"
-                    >
-                      Projects
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="px-3 py-2 flex items-center text-lg font-semibold leading-snug text-white hover:opacity-75"
-                      href="#contact"
-                    >
-                      Contact
-                    </a>
-                  </li>
+                  {
+                    navs.map((nav) => {
+                      return (
+                        <li className="nav-item">
+                          <a
+                            className="px-3 py-2 flex items-center text-lg font-semibold leading-snug text-white hover:opacity-75 capitalize"
+                            href={"#" + (nav == "home" ? "" : nav)}
+                          >
+                            {nav}
+                          </a>
+                        </li>
+                      )
+                    })
+                  }
                 </ul>
               </div>
             </div>
