@@ -37,7 +37,7 @@ const navbar = () => {
                   {
                     navs.map((nav) => {
                       return (
-                        <li className="nav-item">
+                        <li className="nav-item" key={nav}>
                           <a
                             className="px-3 py-2 flex items-center text-lg font-semibold leading-snug text-white hover:opacity-75 capitalize"
                             href={"#" + (nav == "home" ? "" : nav)}
