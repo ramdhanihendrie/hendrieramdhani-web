@@ -12,7 +12,7 @@ const navbar = () => {
             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
               <div className="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
                 <a
-                  className="text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-primary"
+                  className="text-3xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-primary"
                   href="#"
                 >
                   Hendrie Ramdhani
@@ -38,7 +38,7 @@ const navbar = () => {
                       className="px-3 py-2 flex items-center text-lg font-semibold leading-snug text-white hover:opacity-75"
                       href="#"
                     >
-                    Home
+                      Home
                     </a>
                   </li>
                   <li className="nav-item">
