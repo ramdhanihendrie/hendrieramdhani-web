@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/hero"
 
 export default function Index() {
   return (
@@ -8,7 +9,7 @@ export default function Index() {
         <meta name="description" content="Hendrie Ramdhani" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Home
+      <Hero />
     </div>
   )
 }
