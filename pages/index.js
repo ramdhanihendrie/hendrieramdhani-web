@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Index() {
   return (
-    <div>
+    <div className="bg-secondary text-white">
       <Head>
         <title>Hendrie Ramdhani</title>
         <meta name="description" content="Hendrie Ramdhani" />
