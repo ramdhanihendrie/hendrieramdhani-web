@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Icon } from '@iconify/react';
 
 const navbar = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -25,7 +24,7 @@ const navbar = () => {
                   type="button"
                   onClick={() => setMenuOpen(!menuOpen)}
                 >
-                  <FontAwesomeIcon icon={faBars} />
+                  <Icon icon="akar-icons:text-align-justified" />
                 </button>
               </div>
               <div
