@@ -11,8 +11,14 @@ const hero = () => {
       <div className="mt-5 sm:mt-0">
         <h2 className="text-3xl font-semibold">Hello, I'm</h2>
         <h1 className="text-5xl font-semibold">Hendrie Ramdhani</h1>
-        <p className="py-6">Front-End Web Developer</p>
-        <button className="btn-primary">Download CV</button>
+        <p className="py-6">Web Developer</p>
+        <a 
+          className="btn-primary" 
+          href="/files/Web Developer-Hendrie Ramdhani-resume.pdf" 
+          download
+        >
+          Download CV
+        </a>
       </div>
     </section>
   )
