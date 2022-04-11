@@ -7,7 +7,7 @@ const navbar = () => {
   const navs = ["home", "about", "projects", "contact"]
   return (
     <>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap sticky top-0 z-50">
         <div className="w-full">
           <nav className="relative flex flex-wrap items-center justify-between py-2 pl-3 md:pl-0  bg-darken">
             <div className="container mx-auto flex flex-wrap items-center justify-between">
