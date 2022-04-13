@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/hero"
+import About from "../components/about"
 
 export default function Index() {
   return (
@@ -10,6 +11,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <About />
     </div>
   )
 }
