@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Icon } from '@iconify/react';
 
-const navbar = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const navs = ["home", "about", "projects", "contact"]
   return (
@@ -60,4 +60,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
