@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html style={{scrollBehavior:'smooth'}}>
         <Head>
           <link 
-            href="https://fonts.googleapis.com/css2?family=Poppins" 
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
             rel="stylesheet"
           />
         </Head>
