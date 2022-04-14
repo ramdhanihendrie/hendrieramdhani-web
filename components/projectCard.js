@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const projectCard = (props) => {
   return (
-    <div className="bg-lighten rounded p-3 flex flex-col" key={props.id}>
+    <div className="bg-lighten rounded p-3 flex flex-col">
       <img  src={props.image}/>
       <h4 className="text-primary text-xl font-semibold mt-3">{props.title}</h4>
       <p className="text-justify">{props.desc}</p>

@@ -61,7 +61,7 @@ const projects = () => {
           projectList.map((project) => {
             return(
               <ProjectCard 
-                id={project.id}
+                key={project.id}
                 title={project.title} 
                 desc={project.desc}
                 image={project.image}
