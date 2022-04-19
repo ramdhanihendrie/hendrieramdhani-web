@@ -8,7 +8,7 @@ const projects = () => {
       title: "Portfolio Website", 
       desc: "A portfolio website provides professional information about presents a showcase of my work", 
       image: "/files/portfolio-web.png",
-      link: "https://hendrie-ramdhani.vercel.app/", 
+      link: "https://hendrieramdhani.vercel.app/", 
       repo: "https://github.com/ramdhanihendrie/hendrieramdhani-web"
     },
     {
