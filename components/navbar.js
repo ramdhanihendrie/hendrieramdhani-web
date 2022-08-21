@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Icon } from '@iconify/react';
+import ThemeToggle from './themeToggle';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -51,6 +52,9 @@ const Navbar = () => {
                     })
                   }
                 </ul>
+                <div className="ml-auto lg:ml-5 block">
+                  <ThemeToggle />
+                </div>
               </div>
             </div>
           </nav>
