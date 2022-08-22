@@ -6,7 +6,7 @@ import Contact from "../components/contact"
 
 export default function Index() {
   return (
-    <div className="bg-secondary text-white">
+    <div className="dark:bg-secondary bg-white dark:text-white text-secondary">
       <Head>
         <title>Hendrie Ramdhani</title>
         <meta name="description" content="Hendrie Ramdhani" />
