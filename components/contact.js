@@ -30,7 +30,7 @@ const contact = () => {
       </div>
       <div>
         <h5 className="text-xl font-semibold mt-5 md:mt-0">Contact me, let’s make magic together</h5>
-        <form onSubmit={sendEmail}>
+        <form onSubmit={sendEmail} className="text-white">
           <input type="text" name="name" placeholder="Name :" className="rounded bg-lighten p-3 my-5 w-full lg:max-w-lg block" />
           <input type="email" name="email" placeholder="Email :" className="rounded bg-lighten p-3 my-5 w-full lg:max-w-lg block"/>
           <textarea name="message" rows="5" placeholder="Message :"  className="rounded bg-lighten p-3 my-5 w-full lg:max-w-lg block resize-none" />
