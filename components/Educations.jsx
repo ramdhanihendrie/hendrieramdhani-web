@@ -1,8 +1,8 @@
 import React from 'react'
 
-const educations = () => {
+const Educations = () => {
   const educations = [
-    {title: "Fresh Graduate Academy by Digitalent KOMINFO", desc: "Path Front End Developer" },
+    {title: "Fresh Graduate Academy by Digitalent KOMINFO", desc: "Path Front End Developer and Path React JS For Web Development" },
     {title: "Universitas Islam Negeri Syarif Hidayatullah Jakarta", desc: "Majoring Informatics Engineering" },
   ]
   return (
@@ -23,4 +23,4 @@ const educations = () => {
   )
 }
 
-export default educations
+export default Educations
