@@ -13,7 +13,7 @@ const Certificates = () => {
     <section>
       <h3 className="text-primary font-semibold text-2xl mt-20">Certificates:</h3>
       <p className="text-justify tracking-wide leading-7 mt-3">I have learned several skills through courses and certifications, here are some of the skill certificates I have.</p>
-      <div class="columns-1 md:columns-2 gap-0 xl:px-40">
+      <div className="columns-1 md:columns-2 gap-0 xl:px-40">
         {
           certs.map((certs) => {
             return (
