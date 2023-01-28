@@ -1,9 +1,9 @@
 import React from 'react'
 import Techs from './techs'
 import Educations from './educations'
-import Certificates from './certificates'
+import Certificates from './Certificates'
 
-const about = () => {
+const About = () => {
   return (
     <section id="about" className="container mx-auto pt-20 py-5">
       <h3 className="text-primary font-semibold text-2xl">About me:</h3>
@@ -19,4 +19,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About
