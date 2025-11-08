@@ -1,0 +1,62 @@
+//>> Basic Start <<//
+
+//>> Mixins <<//
+@use "_mixins";
+//>> Variables <<//	
+@use "_variables";
+//>> Buttons <<//
+@use "_buttons";
+//>> Typography <<//
+@use "_typography";
+//>> Basic End <<//	
+
+
+//>> Template Section Style Start <<//
+
+//>> Preloader <<//
+@use "_preloader";
+//>> Section <<//
+@use "_section";
+//>> Animation <<//
+@use "_animation";
+//>> Header <<//
+@use "_header";
+//>> MeanMenu <<//
+@use "_meanmenu";
+//>> Hero <<//
+@use "_hero";
+//>> Feature <<//
+@use "_feature";
+//>> About <<//
+@use "_about";
+//>> Service <<//
+@use "_service";
+//>> Helping <<//
+@use "_helping";
+//>> Team <<//
+@use "_team";
+//>> Faq <<//
+@use "_faq";
+//>> Cta <<//
+@use "_cta";
+//>> Marquee <<//
+@use "_marquee";
+//>> Testimonial <<//
+@use "_testimonial";
+//>> Brand <<//
+@use "_brand";
+//>> Pricing <<//
+@use "_pricing";
+//>> News Addons <<//
+@use "_news-addons";
+//>> Blog index default style <<//
+@use "_blog";
+//>> Project <<//
+@use "_project";
+//>> Contact <<//
+@use "_contact";
+//>> Footer <<//
+@use "_footer";
+
+//>> Template Section Style End <<//
+
