@@ -2,16 +2,16 @@
     <div class="container">
         <div class="mega-menu-wrapper">
             <div class="header-main">
-                <a href="#" class="logo-1">
-                    <img src="{{ asset('build/assets/img/logo/white-logo.svg') }}" alt="logo-img">
+                <a href="#" class="logo">
+                    <img width="60px" src="{{ asset('build/assets/img/logo/logo.svg') }}" alt="logo-img">
                 </a>
                 <div class="header-left">
                     <div class="mean__menu-wrapper">
                         <div class="main-menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li class="active">
-                                        <a href="#">Home</a>
+                                    <li>
+                                        <a href="{{ route('landing.home') }}">Home</a>
                                     </li>
                                     <li>
                                         <a href="#">About</a>

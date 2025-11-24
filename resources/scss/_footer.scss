@@ -270,92 +270,68 @@
     }
 }
 
-.footer-bottom {
-    position: relative;
-    z-index: 9;
+.footer-wrapper {
+    padding: 20px 0px;
 
-    @include mixins.breakpoint (max-sm){
-        padding: 20px 0;
-        text-align: center;
+    @include mixins.breakpoint (max-lg){
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center !important;
+        margin-top: 30px;
     }
-    
-    .footer-wrapper {
-       padding-bottom: 80px;
 
-       @include mixins.breakpoint (max-lg){
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center !important;
-            margin-top: 30px;
-       }
+    p {
+        color: #ffffffb3;
+        margin-bottom: 0px;
 
-        p {
+        a {
             color: #ffffffb3;
+        }
+    }
 
+    .footer-menu {
+        @include mixins.flex;
+        gap: 20px;
+
+        @include mixins.breakpoint (max-sm){
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        li {
             a {
                 color: #ffffffb3;
-            }
-        }
-    
-        .footer-menu {
-            @include mixins.flex;
-            gap: 20px;
+                background-image: linear-gradient(variables.$theme-color,variables.$theme-color);
+                background-position: 0 95%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                display: inline-block;
+                @include mixins.transition;
 
-            @include mixins.breakpoint (max-sm){
-                flex-wrap: wrap;
-                gap: 15px;
-                justify-content: center;
-            }
-
-            li {
-                a {
-                    color: #ffffffb3;
-                    background-image: linear-gradient(variables.$theme-color,variables.$theme-color);
-                    background-position: 0 95%;
-                    background-repeat: no-repeat;
-                    background-size: 0% 2px;
-                    display: inline-block;
-                    @include mixins.transition;
-
-                    &:hover {
-                        background-size: 100% 1px;
-                        color: variables.$theme-color;
-                    }
+                &:hover {
+                    background-size: 100% 1px;
+                    color: variables.$theme-color;
                 }
             }
         }
-
-        .scroll-icon {
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            background-color: variables.$theme-color;
-            border-radius: 5px;
-            text-align: center;
-            color: variables.$white;
-            display: inline-block;
-            font-size: 24px;
-            @include mixins.transition;
-
-            &:hover {
-                background-color: variables.$white;
-                color: variables.$header-color;
-            }
-        }
     }
 
-    &.style-2 {
-        border-top: 1.2px solid rgba(255, 255, 255, 0.07);
-        padding: 20px 0;
-        position: relative;
-        margin-top: 35px;
+    .scroll-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background-color: variables.$theme-color;
+        border-radius: 5px;
+        text-align: center;
+        color: variables.$white;
+        display: inline-block;
+        font-size: 24px;
+        @include mixins.transition;
 
-        .scroll-icon {
-            background-color: variables.$theme-color-2;
-            position: absolute;
-            left: 50%;
-            top: -35px;
-            transform: translateX(-50%);
+        &:hover {
+            background-color: variables.$white;
+            color: variables.$header-color;
         }
     }
 }

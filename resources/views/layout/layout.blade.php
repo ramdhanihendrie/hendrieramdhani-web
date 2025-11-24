@@ -36,15 +36,7 @@
 
      @yield('content')
 
-    <!-- Footer Section Start -->
-        <?php 
-
-            if (!isset($footer)) {
-                ?>
-                <x-footer/>
-                <?php
-            }
-        ?>
+    <x-footer/>
 
     <!--<< All JS Plugins >>-->
     <x-script/>

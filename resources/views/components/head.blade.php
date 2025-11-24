@@ -11,7 +11,7 @@
         @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
         <!--<< Favicon >>-->
-        <link rel="shortcut icon" href="{{ asset('build/assets/img/favicon.svg') }}">
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="{{ asset('build/assets/css/bootstrap.min.css') }}">
         <!--<< Font Awesome.css >>-->
