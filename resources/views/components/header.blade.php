@@ -17,7 +17,7 @@
                                         <a href="{{ route('landing.about') }}">About</a>
                                     </li>
                                     <li>
-                                        <a href="#">Services</a>
+                                        <a href="{{ route('landing.service') }}">Services</a>
                                     </li>
                                     <li>
                                         <a href="#">Blog</a>

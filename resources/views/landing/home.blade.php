@@ -2,53 +2,6 @@
 
 @php
     $breadcrumb = 'false';
-    $specializations = ['Full Stack Development', 'API Development & Integration', 'Landing Page Development', 'Dashbord Development', 'UI/UX Implementation', 'Performance Optimization', 'Website Search Engine Optimization (SEO)', 'Web Deployment'];
-    $services = [
-        [
-            'name' => 'Full Stack Web Development',
-            'icon' => 'fas fa-code',
-            'short_description' => 'I build complete, scalable web applications from backend to polished frontend interfaces.',
-            'long_description' => 'I develop end-to-end web applications with clean architecture, optimized databases, responsive UI components, and maintainable code—ensuring your system is scalable, secure, and user-friendly.'
-        ],
-        [
-            'name' => 'API Development & Integration',
-            'icon' => 'fas fa-code-branch',
-            'short_description' => 'I develop secure APIs and integrate third-party services to ensure seamless data communication.',
-            'long_description' => 'I specialize in building well-structured, secure APIs and integrating external platforms or services, enabling smooth and reliable data flow across applications.'
-        ],
-        [
-            'name' => 'Landing Page Development',
-            'icon' => 'fas fa-layer-group',
-            'short_description' => 'I create visually engaging landing pages optimized for performance and conversion.',
-            'long_description' => 'I design and build high-impact landing pages focused on clarity, speed, SEO, and user engagement—tailored to effectively communicate your message and drive better results.'
-        ],
-        [
-            'name' => 'Performance Optimization',
-            'icon' => 'fas fa-tachometer-alt',
-            'short_description' => 'I improve website speed and efficiency using best-practice optimization techniques.',
-            'long_description' => 'I optimize website performance by refining code, improving asset delivery, implementing caching strategies, and ensuring fast load times that enhance user satisfaction and SEO rankings.'
-        ]
-    ];
-    $portfolios = [
-        [
-            'name' => 'Laser Cutting Spesialis',
-            'url' => 'https://lasercuttingspesialis.com/',
-            'image' => 'LCS.png',
-            'slug' => '#'
-        ],
-        [
-            'name' => 'JAI Foundation',
-            'url' => 'https://jaifoundation.or.id/',
-            'image' => 'JAI.png',
-            'slug' => '#'
-        ],
-        [
-            'name' => 'GDSC UIN Jakarta',
-            'url' => 'https://gdsc-uinjkt.github.io/',
-            'image' => 'GDSC.png',
-            'slug' => '#'
-        ],
-    ];
 @endphp
 
 @section('content')
@@ -391,7 +344,7 @@
     <section class="service-section-4 fix section-border section-padding">
         <div class="container">
             <div class="section-title text-center">
-                <span class="sec-sub-text wow fadeInUp">Service</span> <br>
+                <span class="sec-sub-text wow fadeInUp">Services</span> <br>
                 <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
                     Building powerful web solutions with precision and creativity
                 </h2>
@@ -410,6 +363,9 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+            <div class="service-button text-center mt-5 wow fadeInUp" data-wow-delay=".3s">
+                <a href="{{ route('landing.service') }}" class="theme-btn">Learn More <i class="far fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
