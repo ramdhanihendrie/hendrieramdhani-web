@@ -2184,8 +2184,9 @@ input.main-search-input::placeholder {
 		position: relative;
 		z-index: 9;
 		text-align: center;
-
+		
 		h1 {
+			color: var(--white);
 			font-size: 65px;
 			position: relative;
 			z-index: 9;
@@ -2198,17 +2199,18 @@ input.main-search-input::placeholder {
 			gap: 10px;
 			margin-top: 20px;
 			justify-content: center;
+			padding: 0px;
 
 			li {
 				font-size: 24px;
-				color: var(--theme);
+				color: var(--white);
 				font-weight: 400;
 				text-transform: capitalize;
 				letter-spacing: -0.72px;
 				text-decoration: none;
 
 				a {
-					color: var(--text);
+					color: var(--white);
 					transition: all 0.4s ease-in-out;
 
 					&:hover {
@@ -2217,7 +2219,7 @@ input.main-search-input::placeholder {
 				}
 
 				i {
-					color: var(--theme);
+					color: var(--white);
 				}
 
 				&.style-2 {
@@ -3613,6 +3615,7 @@ input.main-search-input::placeholder {
 	border: 1.2px solid rgba(16, 24, 40, 0.1);
 	border-radius: 10px;
 	transition: all 0.4s ease-in-out;
+	height: 100%;
 
 	h6 {
 		font-weight: 400;

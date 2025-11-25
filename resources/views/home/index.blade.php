@@ -1,7 +1,6 @@
 @extends('layout.layout')
 
 @php
-    $bodyClass = 'home-5-body-color';
     $breadcrumb = 'false';
     $specializations = ['Full Stack Development', 'API Development & Integration', 'Landing Page Development', 'Dashbord Development', 'UI/UX Implementation', 'Performance Optimization', 'Website Search Engine Optimization (SEO)', 'Web Deployment'];
     $services = [
@@ -169,7 +168,7 @@
                                 </div>
                             </div>
                             <div class="about-button wow fadeInUp" data-wow-delay=".5s">
-                                <a href="#" class="theme-btn bg-2">
+                                <a href="{{ route('landing.about') }}" class="theme-btn bg-2">
                                     Learn More
                                     <i class="far fa-arrow-right"></i>
                                 </a>

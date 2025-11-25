@@ -3,7 +3,7 @@
 <!--<< Header Area >>-->
 <x-head/>
 
-<body class="<?php echo (isset($bodyClass) ? $bodyClass   : '')?>">
+<body class="home-5-body-color">
 
     <!-- Preloader Start -->
     <x-preloader/>
