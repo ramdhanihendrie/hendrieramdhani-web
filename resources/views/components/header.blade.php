@@ -23,7 +23,7 @@
                                         <a href="{{ route('landing.portfolio') }}">Portfolio</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <a href="{{ route('landing.contact') }}">Contact</a>
                                     </li>
                                 </ul>
                             </nav>

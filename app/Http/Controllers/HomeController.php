@@ -229,4 +229,9 @@ class HomeController extends Controller
 
         return view('landing.portfolioDetail', compact('portfolio'));
     }
+
+    public function contact()
+    {
+        return view('landing.contact');
+    }
 }

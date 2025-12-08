@@ -11,4 +11,5 @@ Route::controller(HomeController::class)->as('landing.')->group(function () {
     Route::prefix('portfolio')->name('portfolio.')->group(function () {
         Route::get('/{slug}', 'portfolioDetail')->name('detail');
     });
+    Route::get('/contact', 'contact')->name('contact');
 });
