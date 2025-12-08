@@ -130,11 +130,20 @@
 
 .project-card-items {
     margin-top: 30px;
-
+    
     .project-image {
         max-width: 410px;
         
         img {
+            transition: filter .45s ease, transform .3s ease;
+
+            &:hover {
+                filter: brightness(115%) saturate(125%);
+                transform: scale(1.01);
+                box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0.1);
+                cursor: pointer;
+            }
+
             @include mixins.imgw;
             border-radius: 10px;
         }
@@ -154,6 +163,8 @@
                 background-position: 0 95%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
+                color: variables.$white;
+                text-decoration: none;
 
                 &:hover {
                     background-size: 100% 2px;
@@ -185,6 +196,7 @@
 
 .project-details-wrapper {
     margin-bottom: -8px;
+    color: variables.$white;
 
     .project-details-image {
         img {
@@ -201,27 +213,40 @@
             margin-bottom: 10px;
         }
 
-        .project-list {
+        p {
+            @include mixins.breakpoint (lg){
+                margin-right: 30px;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 36px;
+            }
+        }
+
+        ul,
+        ol {
             margin-top: 20px;
+            margin-bottom: 36px;
 
             li {
-                &:not(:last-child){
-                    margin-bottom: 10px;
-                }
-
-                i {
-                    color: variables.$theme-color;
-                    margin-right: 10px;
-                }
+                margin: 0;
             }
+
+            li + li {
+                margin-top: 10px;
+            }
+        }
+
+        ul {
+            list-style-type: disc;
         }
     }
 
     .project-information {
         padding: 40px 50px;
-        background-color: #EFEBFF;
+        background-color: variables.$bg-color;
         border-radius: 10px;
-        border: 1.2px solid rgba(16, 24, 40, 0.10);
+        border: 1.2px solid rgba(255, 255, 255, 0.1);
         margin-top: 20px;
 
         @include mixins.breakpoint (max-xl){
@@ -233,76 +258,14 @@
         }
 
         h4 {
-            border-bottom: 1px solid rgba(16, 24, 40, 0.10);    
-            padding-bottom: 25px;     
-            
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);    
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         ul {
-            margin-top: 20px;
-
-            li {
-                font-size: 22px;
-                justify-content: space-between;
-                width: 100%;
-                @include mixins.flex;
-                padding: 10px 0;
-
-                @include mixins.breakpoint (max-lg){
-                   font-size: 20px;
-                }
-
-                @include mixins.breakpoint (max-md){
-                    font-size: 18px;
-                }
-
-                @include mixins.breakpoint (max-sm){
-                    font-size: 16px;
-                }
-
-                span {
-                    color: variables.$header-color;
-                    font-weight: 500;
-                }
-            }
-        }
-
-        .social-icon {
-            @include mixins.flex;
-            justify-content: space-between;
-            margin-top: 30px;
-
-            h5 {
-                font-size: 22px;
-                padding: 0;
-                margin: 0;
-
-                @include mixins.breakpoint (max-lg){
-                    font-size: 18px;
-                }
-            }
-
-            .icon {
-                @include mixins.flex;
-                gap: 10px;
-
-                a {
-                    width: 40px;
-                    height: 40px;
-                    text-align: center;
-                    line-height: 40px;
-                    border-radius: 50%;
-                    display: inline-block;
-                    background-color: rgba(16, 24, 40, 0.10);              
-                    color: variables.$text-color;
-                    @include mixins.transition;
-    
-                    &:hover {
-                        background-color: variables.$theme-color;
-                        color: variables.$white;
-                    }
-                }
-            }
+            list-style-type: disc;
+            margin-bottom: 20px;
         }
     }
 

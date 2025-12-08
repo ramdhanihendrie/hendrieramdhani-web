@@ -17,4 +17,5 @@
         <script src="{{ asset('build/assets/js/jquery.magnific-popup.min.js') }}"></script>
         <!--<< Wow Animation Js >>-->
         <script src="{{ asset('build/assets/js/wow.min.js') }}"></script>
-        <?php echo (isset($script) ? $script   : '')?>
+        
+        @yield('scripts')

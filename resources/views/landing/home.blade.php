@@ -289,54 +289,12 @@
             <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">Skills What I’m Experiences</h2>
         </div>
         <div class="skill-wrapper">
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/laravel.svg') }}" alt="img">
-                <span>Laravel</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/nextjs.svg') }}" alt="img">
-                <span>Next JS</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/react.svg') }}" alt="img">
-                <span>React JS</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/wordpress.svg') }}" alt="img">
-                <span>WordPress</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/jQuery.svg') }}" alt="img">
-                <span>jQuery</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/tailwindcss.svg') }}" alt="img">
-                <span>TailwindCSS</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/bootstrap.svg') }}" alt="img">
-                <span>Bootstrap</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/sass.svg') }}" alt="img">
-                <span>SASS</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/php.svg') }}" alt="img">
-                <span>PHP</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/javascript.svg') }}" alt="img">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/typescript.svg') }}" alt="img">
-                <span>TypeScript</span>
-            </div>
-            <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
-                <img src="{{ asset('build/assets/img/home-5/skills/git.svg') }}" alt="img">
-                <span>GIT</span>
-            </div>
+            @foreach ($techs as $tech)
+                <div class="skill-box-items wow fadeInUp" data-wow-delay=".5s">
+                    <img src="{{ asset('build/assets/img/home-5/skills/'. $tech['icon']) }}" alt="img">
+                    <span>{{ $tech['title'] }}</span>
+                </div>
+            @endforeach
         </div>
     </section>
 
@@ -386,12 +344,14 @@
                             <div class="col-md-4 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="project-card-items style-2">
                                     <div class="project-image">
-                                        <img src="{{ asset('build/assets/img/project/'.$portfolio['image']) }}" alt="img">
+                                        <a href="{{ route('landing.portfolio.detail', ['slug' => $portfolio['slug']]) }}">
+                                            <img src="{{ asset('build/assets/img/project/'.$portfolio['image']) }}" alt="img">
+                                        </a>
                                     </div>
                                     <div class="project-content">
                                         <h3>
-                                            <a href="{{ $portfolio['slug'] }}">
-                                                {{ $portfolio['name'] }}
+                                            <a href="{{ route('landing.portfolio.detail', ['slug' => $portfolio['slug']]) }}">
+                                                {{ $portfolio['title'] }}
                                             </a>
                                         </h3>
                                     </div>
@@ -402,7 +362,7 @@
                 </div>
             </div>
             <div class="project-button text-center mt-5 wow fadeInUp" data-wow-delay=".3s">
-                <a href="#" class="theme-btn">View More <i class="far fa-arrow-right"></i></a>
+                <a href="{{ route('landing.portfolio') }}" class="theme-btn">View More <i class="far fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

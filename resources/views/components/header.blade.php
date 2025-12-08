@@ -20,7 +20,7 @@
                                         <a href="{{ route('landing.service') }}">Services</a>
                                     </li>
                                     <li>
-                                        <a href="#">Blog</a>
+                                        <a href="{{ route('landing.portfolio') }}">Portfolio</a>
                                     </li>
                                     <li>
                                         <a href="#">Contact</a>
