@@ -6,7 +6,7 @@
 <body class="home-5-body-color">
 
     <!-- Preloader Start -->
-    <x-preloader/>
+    <x-Preloader/>
 
     <!-- Back To Top Start -->
     <x-backtotop/>
